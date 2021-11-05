@@ -1,0 +1,25 @@
+^name "gene-example-app"
+^version "0.1.0"
+^license "MIT"
+^author [
+  "Guoliang Cao"
+]
+^gene-version "*"
+^main-module "main" # Relative to source dir
+^deps [
+  ($dep "gene-example-lib" ">=0.1.0" ^path "../gene-example-lib")
+  # Same as below
+  # (dep
+  #   ^name     "gene-example-lib"
+  #   ^version  ">= 0.1.0"
+  #   ^path     "../gene-example-lib"
+  # )
+]
+^src-dirs [
+  "src"
+]
+^test-dirs [
+  "tests"
+]
+^homepage "https://github.com/gcao/gene-example-app"
+^repository "https://github.com/gcao/gene-example-app.git" # github:gcao/gene-example-app

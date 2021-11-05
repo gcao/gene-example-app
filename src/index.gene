@@ -1,0 +1,11 @@
+#!/usr/bin/env gene
+
+(import upcase from "index" ^pkg "gene-example-lib")
+
+(fn mungle s
+  ($ s ":" (upcase s))
+)
+
+(fn main _
+  (println (mungle "ab"))
+)
